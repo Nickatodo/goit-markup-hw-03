@@ -1,0 +1,143 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color:#212121;
+    letter-spacing: 0.03em;
+}
+
+.list{
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.17;
+    color: #2196F3;
+}
+
+.menu_items .menu_item{
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+.contacto_items .contacto_item{
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+
+.link:hover {
+    color: #2196F3;
+}
+
+.menu_items .current{
+    color: #2196F3;
+}
+
+.titulo {
+    background-color: #2F303A;
+}
+
+.titulo_text{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.btn_titulo{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.cualidad_items .cualidad_item_titulo{
+    font-weight: 700;
+    line-height: 1.17;
+}
+
+.cualidad_items .cualidad_item_texto{
+    line-height: 1.71;
+    color: #757575;
+}
+
+.dedicamos_titulo,
+.equipo_titulo{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.equipo_items .equipo_item_titulo{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.17;
+}
+
+.equipo_items .equipo_item_texto{
+    font-size: 16px;
+    line-height: 1.17;
+    color: #757575;
+}
+
+.base{
+    background-color: #2F303A;
+}
+
+.base_items .base_item_mapa{
+    font-style: normal; /* etiqueta addres usa style italic*/
+    line-height: 1.71;
+    color: #FFFFFF;
+}
+
+.base_items .base_item_mail, .base_items .base_item_tel{
+    font-style: normal; /* etiqueta addres usa style italic*/
+    line-height: 1.71;
+    color: #FFFFFF99;
+}
+
+.filtro_items .filtro_item{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.16;
+    background-color: #F5F4FA;
+    color: #212121;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filtro_item:focus{
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
+.listado_items .listado_item_titulo{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.listado_items .listado_item_texto{
+    font-size: 16px;
+    line-height: 1.87;
+    color: #757575;
+}
