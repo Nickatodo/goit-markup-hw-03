@@ -9,14 +9,18 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>WebStudio</title>
   </head>
   <body>
     <header class="menu">
-      <nav>
-        <a href="./index.html" class="logo link">WebStudio</a>
+      <nav class="menu_nav container">
         <ul class="menu_items list">
+          <li><a href="./index.html" class="logo link">WebStudio</a></li>
           <li>
             <a href="./index.html" class="menu_item link current">Estudio</a>
           </li>
@@ -25,19 +29,19 @@
           </li>
           <li><a href="#" class="menu_item link">Contactos</a></li>
         </ul>
+        <ul class="contacto_items list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="contacto_item link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+525555296000" class="contacto_item link"
+              >+52 55 5529 6000</a
+            >
+          </li>
+        </ul>
       </nav>
-      <ul class="contacto_items list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="contacto_item link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a href="tel:+525555296000" class="contacto_item link"
-            >+52 55 5529 6000</a
-          >
-        </li>
-      </ul>
     </header>
     <main class="main">
       <section class="titulo">
@@ -46,7 +50,7 @@
           Solicite nuestro servicio
         </button>
       </section>
-      <section class="cualidad">
+      <section class="cualidad container">
         <ul class="cualidad_items list">
           <li>
             <h3 class="cualidad_item_titulo">ATENCIÓN A LOS DETALLES</h3>
@@ -79,7 +83,7 @@
           </li>
         </ul>
       </section>
-      <section class="dedicamos">
+      <section class="dedicamos container">
         <h2 class="dedicamos_titulo">A qué nos dedicamos</h2>
         <ul class="dedicamos_items list">
           <li>
@@ -99,7 +103,7 @@
           <li><img src="./images/tablet.jpg" alt="Tablet" width="373" /></li>
         </ul>
       </section>
-      <section class="equipo">
+      <section class="equipo container">
         <h2 class="equipo_titulo">Nuestro Equipo</h2>
         <ul class="equipo_items list">
           <li>
@@ -138,15 +142,16 @@
       </section>
     </main>
     <footer class="base">
-      <a href="./index.html" class="logo link">WebStudio</a>
-      <address>
+      <address class="base_address container">
+        <a href="./index.html" class="logo link">WebStudio</a>
         <ul class="base_items list">
           <li>
             <a
               href="https://goo.gl/maps/osZr5VrV2G2iyL328"
               target="_blank"
               class="base_item_mapa link"
-              >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
+              >Calz. Ticomán 500, Ciudad de <br />
+              México, CDMX, México</a
             >
           </li>
           <li>
