@@ -1,4 +1,6 @@
-*{
+*,
+*::before,
+*::after{
     box-sizing: border-box;
 }
 
@@ -10,8 +12,20 @@ body{
     margin: 0px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin-top: 0;
+}
+
 .list{
     list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
 
 .link{
@@ -21,34 +35,42 @@ body{
 
 .container {
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
-    padding: 94px 0;
 }
 
 .menu{
     border-bottom: 1px solid #ECECEC;
 }
 
-.menu_nav {
+.menu_div{
     display: flex;
-    justify-content: space-between;
-    padding: 0;
 }
 
-.logo{
+.logo {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.17;
     color: #2196F3;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.menu_nav{
+    display: flex;
+    gap: 344px;
 }
 
 .menu_items{
     display: flex;
     column-gap: 50px;
     align-items: center;
-    padding: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .menu_items .menu_item{
@@ -62,6 +84,8 @@ body{
     display: flex;
     column-gap: 50px;
     align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .contacto_items .contacto_item{
@@ -81,10 +105,12 @@ body{
 
 .titulo {
     background-color: #2F303A;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.titulo_div{
+    text-align: center;
 }
 
 .titulo_text{
@@ -94,10 +120,7 @@ body{
     letter-spacing: 0.06em;
     text-align: center;
     color: #FFFFFF;
-    margin: 0;
-    padding-top: 200px;
-    padding-bottom: 30px;  
-    width: 696px;
+    margin-bottom: 30px;
 }
 
 .btn_titulo{
@@ -108,10 +131,14 @@ body{
     color: #FFFFFF;
     background-color: #2196F3;
     height: 50px;
-    text-align: center;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
+    padding: 10px 32px;
+}
+
+.cualidad{
+    padding: 94px 0;
 }
 
 .cualidad_items{
@@ -125,8 +152,7 @@ body{
     font-weight: 700;
     line-height: 1.17;
     width: 270px;
-    margin: 0;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .cualidad_items .cualidad_item_texto{
@@ -138,7 +164,7 @@ body{
 
 .dedicamos{
     display: flex;
-    padding-top: 0;
+    padding: 94px 0;
     flex-direction: column;
 }
 
@@ -148,8 +174,7 @@ body{
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    margin: 0;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .dedicamos_items{
@@ -161,14 +186,13 @@ body{
 
 .equipo{
     display: flex;
-    padding-top: 0;
+    padding: 94px 0;
     flex-direction: column;
+    background-color: #F5F4FA;
 }
 
 .equipo_items{
     display: flex;
-    margin: 0;
-    padding: 0;
     justify-content: space-between;
 }
 
@@ -178,14 +202,16 @@ body{
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
+.equipo_div{
+    padding: 30px 44px 30px 45px;
+}
+
 .equipo_items .equipo_item_titulo{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.17;
     text-align: center;
-    margin: 0;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .equipo_items .equipo_item_texto{
@@ -194,32 +220,22 @@ body{
     color: #757575;
     text-align: center;
     margin: 0;
-    padding-bottom: 30px;
 }
 
 .base{
     background-color: #2F303A;
-    height: 252px;
-}
-
-.base_address{
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
-.base_items{
-    margin: 0;
-    padding: 0;
-}
-
 .base_items .base_item_mapa{
-    font-style: normal; /* etiqueta addres usa style italic*/
+    font-style: normal; /* etiqueta address usa style italic*/
     line-height: 1.71;
     color: #FFFFFF;
 }
 
 .base_items .base_item_mail, .base_items .base_item_tel{
-    font-style: normal; /* etiqueta addres usa style italic*/
+    font-style: normal; /* etiqueta address usa style italic*/
     line-height: 1.71;
     color: #FFFFFF99;
 }
@@ -231,11 +247,9 @@ body{
 
 .filtro_items{
     display: flex;
-    margin: 0;
-    padding: 0;
     justify-content: center;
     gap: 8px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .filtro_items .filtro_item{
@@ -248,7 +262,7 @@ body{
     border-radius: 4px;
     cursor: pointer;
     border: none;
-    height: 38px;
+    padding: 6px 18px 6px 17px;
 }
 
 .filtro_item:focus{
@@ -264,23 +278,23 @@ body{
     gap: 30px;
 }
 
-.listado_items > li{
-    border: 1px solid #EEE;
+.listado_item{
+    flex-basis: calc((100% - 60px) / 3);
     background: #FFF;
+    border: 1px #EEE;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
+.listado_div {
+    padding: 20px 24px;
+}
+
 .listado_items .listado_item_titulo{
-    width: 332px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin: 0;
-    padding-top: 20px;
-    padding-bottom: 4px;
-    padding-left: 24px;
-    padding-right: 24px;
+    margin-bottom: 4px;
 }
 
 .listado_items .listado_item_texto{
@@ -288,7 +302,4 @@ body{
     line-height: 1.87;
     color: #757575;
     margin: 0;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
 }
